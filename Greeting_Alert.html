@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greeting Alert</title>
+</head>
+<body>
+  <script>
+    const now = new Date();
+    const hour = now.getHours();
+    let greeting;
+
+    if (hour < 12) {
+      greeting = "Good Morning!";
+    } else if (hour < 18) {
+      greeting = "Good Afternoon!";
+    } else {
+      greeting = "Good Evening!";
+    }
+
+    alert(greeting);
+  </script>
+</body>
+</html>
